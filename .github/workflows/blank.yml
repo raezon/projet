@@ -21,14 +21,3 @@ jobs:
           echo "github.run_id = ${{ github.run_id }}"
           echo "github.run_number = ${{ github.run_number }}"
           echo "github.workspace = ${{ github.workspace }}"
-      - name: Qui a déclenché ce workflow ?
-        run: echo "Déclenché par : ${{ github.actor }}"
-        
-      - name: Sur quelle branche ?
-        run: echo "Branche : ${{ github.ref_name }}"
-        
-      - name: Quel événement ?
-        run: echo "Événement : ${{ github.event_name }}"
-        
-      - name: Numéro du run
-        run: echo "Run numéro : ${{ github.run_number }}"
