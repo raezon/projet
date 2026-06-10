@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Qui a déclenché ce workflow ?
-        run: echo "Déclenché par : ${{ github.actor }}"
+        run: echo "Déclenché par "
       - name: Sur quelle branche ?
-        run: echo "Branche : ${{ github.ref }}"
+        run: echo "Branche  "
       - name: Quel événement ?
-        run: echo "Événement : ${{ github.event_name }}"
+        run: echo "Événement "
       - name: Numéro du run
-        run: echo "Run numéro : ${{ github.run_number }}"
+        run: echo "Run numéro "
